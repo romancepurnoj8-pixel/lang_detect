@@ -1,5 +1,6 @@
 from pynput import keyboard
 from keyDict import ruDict
+import time
 
 # Глобальные переменные для обмена данными
 char = ""
@@ -23,7 +24,7 @@ def press(char):
 while True:
     if char != "":
         ru = press(char)
-        print(f"Pressed: {char} in {ru}")
-                                                            
-    # ОЧИЩАЕМ переменную, чтобы цикл дождался следующего нажатия
-    char = ""
+        print(f"Pressed: {char} in {ru}")                                                    
+        # ОЧИЩАЕМ переменную, чтобы цикл дождался следующего нажатия
+        char = ""
+    time.sleep(0.01)
