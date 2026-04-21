@@ -3,10 +3,8 @@ from keyDict import ruDict
 import time
 
 # Глобальные переменные для обмена данными
-char = ""
-ruSymbol = ""
-ru = ""
-source = "qwqwwqw"
+
+source = input(str())
 final_string = ""
 
 """
